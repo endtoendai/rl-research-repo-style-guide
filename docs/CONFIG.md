@@ -37,9 +37,10 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements.txt -q
 # command to run tests
 script:
+  - flake8
   - pytest
 ```
 
@@ -71,6 +72,7 @@ install:
 
 script:
   # Your test script goes here
+  - flake8
   - pytest
 ```
 
