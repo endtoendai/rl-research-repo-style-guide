@@ -34,7 +34,6 @@ Here is a simple `.travis.yml` file from the [official documentation](https://co
 language: python
 python:
   - "3.6"
-  - "3.7"
 # command to install dependencies
 install:
   - pip install -r requirements.txt -q
@@ -53,7 +52,6 @@ language: python
 python:
   # We don't actually use the Travis Python, but this keeps it organized.
   - "3.6"
-  - "3.7"
 install:
   - sudo apt-get update
   - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
