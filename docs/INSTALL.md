@@ -23,6 +23,11 @@ If you installed a new package, you can update `requirements.txt` with the `pip 
 pip freeze > requirements.txt
 ```
 
+Sometimes, you might want to remove all packages that is installed in the environment but not in `requirements.txt`. You can use the following command:
+
+```
+pip freeze | grep -v -f requirements.txt - | xargs pip uninstall -y
+```
 
 
 ## Conda Environment Spec `environment.yml`
